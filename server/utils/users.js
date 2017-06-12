@@ -27,6 +27,11 @@ class Users {
         var nameArray = users.map((user) => user.name);
         return nameArray;
     }
+
+    existUser(name){
+        var users = this.users.filter((user)  => user.name === name);
+        return users.length !== 0;
+    }
 }
 
 module.exports = {Users};

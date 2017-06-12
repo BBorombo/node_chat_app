@@ -66,4 +66,14 @@ describe('addUser', () => {
         expect(res).toEqual(['Jen']);
     });
 
+    it('should return that the user not exist', () => {
+        var res = users.existUser('Erwan');
+        expect(res).toEqual(false);
+    });
+
+    it('should return that the user exist', () => {
+        var res = users.existUser('Jen');
+        expect(res).toEqual(true);
+    });
+
 });
