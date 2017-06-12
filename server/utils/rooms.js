@@ -23,7 +23,7 @@ class Rooms {
     }
 
     static nameToId(name){
-        return name.trim().toLowerCase();
+        return name.toLowerCase().trim();
     }
 
 }
